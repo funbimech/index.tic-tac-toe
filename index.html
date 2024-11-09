@@ -1,1 +1,131 @@
-brbbrh
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-tic-tac-toe</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container1">
+      <div class="box-1">
+        <div class="marker-space">X O</div>
+      </div>
+      <div class="box-2">
+        <div class="box-4">Player1 is X</div>
+        <div class="box-5">
+          <div class="box-7">X</div>
+          <div class="box-8">O</div>
+        </div>
+        <div class="box-6">REMEMBER:X GOES FIRST</div>
+      </div>
+      <div class="box-3">
+        <button type="submit" class="btn" id="cmpbtn">NEW GAME(VS CPU)</button>
+        <button type="submit" class="btn" id="playbtn">
+          NEW GAME(VS PLAYER)
+        </button>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="main">
+        <div class="content">
+          <ul>
+            <li>X O</li>
+            <li class="turn">X TURN</li>
+            <li><i class="bx bx-menu"></i></li>
+          </ul>
+        </div>
+        <div class="gameboard">
+          <div id="0" class="boxs cells"></div>
+          <div id="1" class="boxs cells"></div>
+          <div id="2" class="boxs cells"></div>
+          <div id="3" class="boxs cells"></div>
+          <div id="4" class="boxs cells"></div>
+          <div id="5" class="boxs cells"></div>
+          <div id="6" class="boxs cells"></div>
+          <div id="7" class="boxs cells"></div>
+          <div id="8" class="boxs cells"></div>
+        </div>
+        <div class="display">
+          <div class="playwins"></div>
+          <div class="message"></div>
+          <div class="gamebtns">
+            <button type="submit" class="btn1" id="quitbtn">Quit</button>
+            <button type="submit" class="btn1" id="restartbtn">
+              next round
+            </button>
+          </div>
+        </div>
+        <div class="scoreboard">
+          <div class="points">
+            X(P1)
+            <div class="playresults win">0</div>
+          </div>
+          <div class="ties">
+            TIES
+            <div class="results draws">0</div>
+          </div>
+          <div class="cmp">
+            O(P2)
+            <div class="cmpresults cmpwins">0</div>
+          </div>
+          <div class="playerchoice"></div>
+          <div class="computerchoice"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container3">
+      <div class="main">
+        <div class="content">
+          <ul>
+            <li>X O</li>
+            <li class="turn">X TURN</li>
+            <li><i class="bx bx-menu"></i></li>
+          </ul>
+        </div>
+        <div class="gameboard">
+          <div id="0" class="boxs cell"></div>
+          <div id="1" class="boxs cell"></div>
+          <div id="2" class="boxs cell"></div>
+          <div id="3" class="boxs cell"></div>
+          <div id="4" class="boxs cell"></div>
+          <div id="5" class="boxs cell"></div>
+          <div id="6" class="boxs cell"></div>
+          <div id="7" class="boxs cell"></div>
+          <div id="8" class="boxs cell"></div>
+        </div>
+        <div class="displays">
+          <div class="playwin"></div>
+          <div class="messages"></div>
+          <div class="gamebtn">
+            <button type="submit" class="btn2" id="quitbutton">Quit</button>
+            <button type="submit" class="btn2" id="restartbutton">
+              next round
+            </button>
+          </div>
+        </div>
+        <div class="scoreboard">
+          <div class="points">
+            X(P1)
+            <div class="playresult won">0</div>
+          </div>
+          <div class="ties">
+            TIES
+            <div class="result draw">0</div>
+          </div>
+          <div class="cmp">
+            O(P2)
+            <div class="cmpwin cmpresult">0</div>
+          </div>
+          <div class="playerchoice"></div>
+          <div class="computerchoice"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
